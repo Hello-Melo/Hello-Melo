@@ -1,0 +1,74 @@
+.flex{display: flex;}
+.just{justify-content: space-around;}
+
+.navbar{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.btn-outline-success{
+    color: chocolate;
+    border-color: chocolate;
+}
+.btn-outline-success:hover{
+    background-color: chocolate;
+    color: white;
+    border-color: chocolate;
+}
+
+.btn:active{
+   border: 1px solid chocolate;
+}
+
+footer{
+    background-color: black;
+    font-size: 14px;
+}
+
+.first-line{
+    color: white;
+    border-bottom: 1px solid #392d23;
+}
+
+.second-line a{
+    color: white;
+    text-decoration: none;
+}
+
+.second-line div{
+    color: white;
+}
+
+
+/* 화면 크기에 맞춰서   스타일 적용 가능함*/
+
+@media screen  and (max-width:48rem) {
+    .first-line{
+        text-align: center;
+    }
+}
+
+@media screen  and (max-width:48rem) {
+    .second-line{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-bottom: 1px solid #392d23;
+
+    }
+    .second-line .flag{
+        display: none;
+    }
+}
+
+.third-line{
+    display: none;
+}
+
+@media screen  and (max-width:48rem) {
+    .third-line{
+        display: block;
+        text-align: center;
+        color: white;
+    }
+}
+

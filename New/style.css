@@ -1,0 +1,87 @@
+*{
+    padding: 0; margin:  0; 
+}
+a{display: inline-block; text-decoration: none; color: black;}
+li{list-style: none; display: inline-block;}
+
+
+.clearfix::after{
+    display: block;
+    content:  " ";
+    clear: both;
+}
+
+
+header .top_warp {     background-color: #518ab9;}
+header .top_warp .top{
+    width: 1200px;
+    margin: auto;
+
+}
+
+ .top .left_top{
+float: left;
+}
+.top .right_top{
+    float: right;
+    }
+
+    .top .left_top li, .top .right_top li{
+        float: left;
+    }
+
+.top .left_top a, .top .right_top a {
+    padding:  12px 10px;
+    font-size: 16px;
+   color:  #92b0c8;
+   font-weight: bold;
+}
+
+
+/* 탑의 바텀시작 */
+
+
+header .bottom_wrap{
+    background-color: #337cb8;
+}
+header .bottom_wrap .bottom{
+    width: 1200px;
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    position: relative;
+    padding: 50px 0;
+}
+.bottom .gnb{
+    display: inline-block;
+    /* background-color: yellowgreen; */
+    margin-left: 100px;
+    }
+
+    .bottom .gnb a{
+        font-size: 22px;
+        padding: 0 12px;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* .bottom .gnb li{
+        float: left;
+    } */
+
+.bottom .logo img{
+    width: 142px;
+
+}
+.bottom .logo{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+}
+ .bottom .sitemap{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translate(0, -50%);
+}

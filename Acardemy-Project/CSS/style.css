@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.top{
+    /* height: 141px; */
+    /* width: 1348px; */
+}
+
+.top_warp_header{
+    height: 40px;
+    /* width: 1348px; */
+    border: 1px solid red;
+}
+.top_warp_bot{
+    height: 96px;
+    /* width: 1348px; */
+    border: 1px solid blue;
+}
+
+/* 헤드 팁 */
+.top_wrap{
+    background-color: #0e4194;
+    height: 40px;
+    width:1200px;
+    margin: 0 auto;
+}
+
+
+.top_left{
+     background-color: rgb(136, 29, 91);
+    float: left;
+}
+
+.top_left a{
+    color: white;
+    background: #183867;
+    font-size: 13px;
+    display:block;
+    height: 40px;
+    width: 107px;
+    line-height: 40px;
+    padding-left: 15px;
+  }
+
+  .top_right{
+    background-color: aqua;
+    float: right;
+    }
+.top_menu li{
+    float:left;
+}

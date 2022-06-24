@@ -1,0 +1,62 @@
+*{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: black;}
+/*  여기까지를 노말라이징(초기화)라고 한다. HTML의 기본 설정들을
+싸악 빼고 0에서 시작하는것 Re제로? */
+
+.clearfix::after{
+    display: block;
+    content: ' ';
+    clear: both;}
+
+/*  */
+header{
+    border-bottom: 1px solid #e6e6e6;
+}
+.header_wrap{
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+/* 헤더 탑 */
+.top{
+    /* border: 1px solid red; padding: 10px; */
+}
+.lnb{float: right;}
+.lnb li{
+    float: left;
+}
+.lnb li a {
+    padding: 0 12px; display: inline-block; color:  #747474;
+}
+
+/* 헤더 바텀 */
+.bottom{
+    /* border: 1px solid blue;  */
+    position: relative;
+}
+.bottom .logo{
+    padding-top: 28px;
+    float:left
+}
+.bottom .gnb{
+    float: right;
+}
+.gnb li{
+    float: left;
+}
+.gnb li a{
+    font-weight: bold;
+    width: 140px;
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    line-height: 90px;
+    border-left: 1px solid #e6e6e6;
+
+}
+.gnb li:last-child a {
+    color: red;
+    border-right: 1px solid #e6e6e6;
+}

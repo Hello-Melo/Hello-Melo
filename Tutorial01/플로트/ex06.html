@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+        .wrap{
+            width: 1200px; margin: auto;
+            border: 1px solid salmon;
+        }
+        .left{
+            width: 40%;
+            border: 1px solid rebeccapurple;
+            float: left;
+               }
+        .right{
+            width: 59%;
+            border: 1px solid darkcyan;
+            float: left;
+        }
+        .center{
+            text-align: center;
+        }
+        .center2{
+            width: 130px;
+            margin: auto;
+            border: 1px solid skyblue;
+            /* 블럭 요소 정렬에는 블럭의 넓이와 마진auto를 쓰면 자동정렬된다. */
+        }
+
+        .center3{
+            border: 1px solid darkblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap clearfix">
+<div class="left">좌측</div>
+<div class="right">우측</div>
+    </div>
+    <h2 class="center">가운데 정렬</h2>
+    <h2 class="center2">가운데 2</h2>
+        <div class="center3">
+            <span >키운데 정렬</span>
+            <span >키운데 정렬1</span>
+            <span >키운데 정렬2</span>
+            <a href="">가킹운데2</a>
+            <input type="text">
+            <!-- 여기까지 전부 인라인 요소(한 라인 안에 드간다는 의미)
+            블럭요소는 걍 한층을 싸그리 지가 다쓴다는 말. 개쉬웁지? -->
+       </div>
+
+</body>
+</html>

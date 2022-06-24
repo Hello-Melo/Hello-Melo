@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            
+        p{
+            /* 태그선택자 */
+            /* 이건 해당 태그를 가진 모든 태그에 다 적용하는 코드 */
+            font-size: 30px;
+        }
+        #red{   
+            /* ID 선택자 */
+            /* Id 가 red 인 놈을 선택해서 적용시킨 코드 적용하는것 */
+            /* 이것은 중복되서 쓰는게 아님. 고유식별자 이기 때문 */
+            /* 걍 클래스 쓰는게 나을덧? 다를게 없다. */
+            color: red;
+        }
+
+        .bg_blue{ 
+            /* 클래스 선택자 */
+            /* 클래스는 여러게 적용이 가능함! */
+            /* 보통 이것만 써도 아무런 문제 없을덧! */
+            background: blue;
+        }
+
+        h1, h2 {
+            text-align: center;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Id 선택자, 클래스 선택자</h1>
+    <h2>Id 선택자, 클래스 선택자</h2>
+    <p>요소1</p>
+    <p id="red" class="bg_blue">요소2</p>
+    <p>요소3</p>
+    <p style="color: aquamarine; background-color: red;">요소4</p>
+
+
+</body>
+</html>

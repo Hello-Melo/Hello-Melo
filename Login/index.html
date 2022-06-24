@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="area">
+          <section class="container"> 
+              <div class="contents"><!-- 전체 컨테이너-->
+              <h3 class="no">로그인</h3>
+                   <div class="group">
+                       <div class="join_box">
+                              <div class="textbox"> <p>로그인하시면 국민취업지원제도 서비스를 보다 편리하게 이용하실 수 있습니다.</p>
+                                </div>
+                               <div class="loginlist mt">
+                                    <button class="btn act">개인회원</button>
+                                       <button class="btn1">기업회원</button>
+                                </div>
+                       <div class="loginbox"> <!-- 중간 로긴창-->
+                            <div class="innerbox"> 
+                             <div class="member_mid"> <!-- 아디입력 -->
+                                <span class="round"><i class="split member_persnal"></i></span>
+                                <form class="fieldset">
+                                    <fieldset>
+                                        <legend>개인회원 로그인</legend>
+                                        <input type="text" id="mem_id" title="아이디 입력" placeholder="아이디를 입력하세요" maxlength="24">
+                                        <input type="password" name="pwd" id="pwd" title="비밀번호 입력" placeholder="비밀번호를 입력하세요">
+                                        <span><img src="imgs/off.png" alt=""></span>
+                                        <div class="check">
+                                            <input type="checkbox" name="chkId" id="chkId">
+                                            <label for="chkId">아이디 저장</label>
+                                            <div class="immutable">
+                                                <input type="checkbox" name="chkIdT" id="chkIdT">
+                                                <label for="chkIdT">키보드 보안 적용</label>
+                                            </div>
+                                        </div>
+                                        <button class="login_btn">로그인</button>
+                                    </fieldset>
+                                    <div class="btn_set">
+                                        <a href="" class="white btn_small">아이디/비밀번호 찾기</a>
+                                        <a href="" class="white btn_small">개인회원가입</a>
+                                    </div>
+                                    <div class="mt20 ft">
+								※  (구)워크넷 회원은(One-id제외) 최초 1회 로그인은
+                                    <br>    
+                                    <span class="red"> 간편인증</span>
+                                을 제외한 인증수단을 통해 로그인 하시기 바랍니다.
+                                    </div>
+                                </form>
+                            </div>
+                            <ul class="bot_select"><!-- 인증-->
+                                <li>
+                                    <dl>
+                                        <dt class="visible">
+                                            간편인증
+                                        </dt>
+                                    <dd>
+                                        <div class="pg">
+                                            <i class="split member_ico mem4"> </i>
+                                            <p>간편인증으로 본인인증</p>
+                                            <div class="btn_set">
+                                                <img src="imgs/join_regi_icon_kakao.png" alt="카카오인증">
+                                                <img src="imgs/join_regi_icon_kb.png" alt="국민은행인증">
+                                                <img src="imgs/join_regi_icon_payco.png" alt="페이코인증">
+                                                <img src="imgs/join_regi_icon_teloper.png" alt="통신사인증">
+                                                <img src="imgs/join_regi_icon_samsung.png" alt="삼성인증">
+                                            </div>
+                                        </div>
+                                        <button type="button">간편 인증</button>
+                                    </dd>
+                                </dl>
+                                </li>
+                                <li>
+                                    <dl >
+                                        <dt class="visible">공동인증서</dt>
+                                        <dd>
+                                            <div class="pg">
+                                                <i class="split member_ico mem1"></i>
+                                                <p>
+                                                    공동인증서로
+                                                    <br>
+                                                    본인인증
+                                                </p>
+                                            </div>
+                                            <button type="button">공동인증서 인증
+                                                <br>
+                                                <span>(구 공인인증서)</span>
+                                            </button>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="visible">아이핀 인증</dt>
+                                        <dd>
+                                            <div class="pg">
+                                                <i class="split member_ico mem5"></i>
+                                                <p>본인 아이핀 정보로
+                                                    <br>
+                                                    본인인증
+                                                </p>
+                                            </div>
+                                            <button type="button">아이핀 인증</button>
+
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="visible">휴대폰인증</dt>
+                                        <dd>
+                                            <div class="pg">
+                                                <i class="split member_ico mem6">  </i>
+                                                    <p>
+                                                        본인 휴대전화 정보로
+                                                        <br>
+                                                        본인인증
+                                                    </p>
+                                              
+                                            </div>
+                                        <button type="button">휴대전화 인증</button>
+                                        </dd>
+                                    </dl>
+                                </li>
+
+                            </ul>
+                        </div>
+                       </div>
+            </div>
+        </div>
+    </div>
+          </section>
+</div>
+</main>
+    
+</body>
+</html>

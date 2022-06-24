@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            li{ list-style: none;     }
+            a{text-decoration: none; color: black;}
+            ul{margin: 0; padding: 0;}
+            .bottom{
+                outline: 1px solid red;
+                position: relative;
+                          }
+            .logo{  padding: 30px 0; }
+            .bottom ul{
+                border: 1px solid yellowgreen;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0,-50%);
+            }
+            .bottom ul li{ float: left; }
+            .bottom ul li a{ padding: 20px 15px; display: block;}
+            .clearfix{clear: both;}
+            /* ul::after{
+                display: block;
+                content: ' ';
+                clear: both;
+            } */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="bottom">
+            <div class="logo">
+                <img src="http://www.tcpschool.com/img/logo.png" alt="">
+            </div>
+            <ul class="clearfix">
+                <li> <a href="">코딩 이야기</a></li>
+                <li> <a href="">코딩의 첫걸음</a></li>
+                <li> <a href="">코딩과 데이터</a></li>
+                <li> <a href="">데이터와 소통</a></li>
+                <li> <a href="">코딩의 고수</a></li>
+                <li> <a href="">자격증 정보</a></li>
+                <!-- <div class="clearfix"></div> -->
+            </ul>
+
+        </div>
+    </header>
+
+
+
+    
+</body>
+</html>

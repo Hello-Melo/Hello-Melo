@@ -1,0 +1,34 @@
+* {
+    padding: 0; margin: 0;
+    list-style: none;
+} 
+a{display: inline-block; text-decoration: none; color: black;}
+
+
+.wrap{width: 1200px; margin: auto; border: 1px solid red;}
+
+header .gnb ul {display: flex; justify-content: center;}
+
+header .gnb ul li{
+    position: relative;
+    
+}
+header .gnb ul li > a{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+header .gnb ul li .submenu {
+    background-color: yellowgreen;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+header .gnb ul li .submenu dd{
+    padding: 10px 8px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+    <div class="visual">
+        <div>컨텐츠</div>
+        <div>칸텐츠</div>
+        <div>콘텐츠</div>
+    </div>
+
+
+    <ul class="banner"> 
+        <li><img src="/imgs/Mid_banner/visual_bg.jpg" alt=""></li>
+        <li><img src="/imgs/Mid_banner/visual_bg2.jpg" alt=""></li>
+        <li><img src="/imgs/Mid_banner/visual_bg3.jpg" alt=""></li>
+    </ul>
+</body>
+<script>
+    $(function(){
+        $('.visual').slick();
+        $('.banner').slick({
+            fade : true,
+            speed: 1000,
+            autoplay : true,
+            autoplaySpeed : 2000,
+         });
+
+    });
+</script>
+
+<style>
+    * {
+        padding: 0; margin: 0;
+    }
+.banner{ 
+   width: 100%;
+   margin: auto;
+
+}
+.banner .slick-prev{background: red; 
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    
+
+    z-index: 10;
+}
+.banner .slick-next{background: blue; 
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    
+    z-index: 10;
+    
+}
+
+.slick-slide {
+    text-align: center;
+}
+
+.slick-slide img{ 
+    display: inline-block;
+
+}
+
+</style>
+
+</html>

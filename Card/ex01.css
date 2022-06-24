@@ -1,0 +1,35 @@
+*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    display: contents;
+    content: "";
+    clear: both;
+}
+
+
+a{display: inline-block;}
+
+.container{
+    border: 1px solid red;
+    width: 1000px;
+    margin: auto;
+    padding: 40px 0 0;
+}
+
+.pipe li { float: left;}
+.pipe li a {padding: 6px 20px;}
+
+.pipe li ~ li::before{
+    display: inline-block;
+     content:  '  ';
+     width: 1px;
+     height: 16px;
+     background: black;
+     position: relative;
+     top: 2px;
+}

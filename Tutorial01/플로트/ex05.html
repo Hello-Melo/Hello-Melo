@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .gnb{
+        border: 1px solid red;
+            }
+    .gnb li {
+        float:left;
+        height: 80px;
+        border: 1px solid red;
+    }
+    /* .clearfix{
+        clear: both;
+    } 하지만 직접 붙이면 불편하니 가상요소로 붙여줄것임*/
+
+    /* 인라인과 블록의 차이 이해하기! */
+
+
+    .clearfix::after{
+        display: block;
+        content: ' ' ;
+        clear: both;
+    }
+
+    .lnb{
+        border: 1px solid rosybrown;
+    }
+    .lnb li {
+        border: 1px solid darkblue;
+        float: left;
+    }
+
+
+
+</style>
+<body>
+
+    <ul class="gnb clearfix">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <!-- 플롯을 걸면 높이가 사리지기 때문에 클리어 속성을 꼭 넣어줘야함
+        항상 맨 마지막에 붙여주면 높이 부분을 잡아줄수있다. -->
+        <!-- 이자리에 에프터가 들어가는 것 -->
+    
+    </ul>
+    <div>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non aliquid dignissimos quas commodi ab porro odit atque consequatur tempore culpa, a sapiente delectus enim quos exercitationem voluptatibus sint? Sunt.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non aliquid dignissimos quas commodi ab porro odit atque consequatur tempore culpa, a sapiente delectus enim quos exercitationem voluptatibus sint? Sunt.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non aliquid dignissimos quas commodi ab porro odit atque consequatur tempore culpa, a sapiente delectus enim quos exercitationem voluptatibus sint? Sunt.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non aliquid dignissimos quas commodi ab porro odit atque consequatur tempore culpa, a sapiente delectus enim quos exercitationem voluptatibus sint? Sunt.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non aliquid dignissimos quas commodi ab porro odit atque consequatur tempore culpa, a sapiente delectus enim quos exercitationem voluptatibus sint? Sunt.
+    </div>
+
+
+    <ul class="lnb clearfix">
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+        <li>서브메뉴3</li>
+        <li>서브메뉴4</li>
+    </ul>
+</body>
+</html>

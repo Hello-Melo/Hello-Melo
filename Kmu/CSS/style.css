@@ -1,0 +1,150 @@
+.clearfix::after{  display: block; content: ' ';  clear: both;}
+a:active{
+
+    border-radius: 3px;
+    padding: 3px;
+    background-color: gray;
+    background: rgba(45, 170, 219, 0.3);
+}
+a:hover{
+    color: #1ed760;
+}
+a:hover{
+    color: #1ed760;
+}
+
+.top_wrap{ background: #0e4194; display: flex;}
+
+.top{  width: 1200px;   margin: auto;  color: white;}
+.top a{ color:white; font-weight: bold; height: 40px; line-height: 40px;}
+
+.top .lang{    float: left;}
+.top .lang a{
+    background: #183867;
+    width: 107px;
+    text-align: center;
+}
+.top .lnb{float: right;}
+.top .lnb li{   float: left;}
+.top .lnb a{padding: 0 13px; font-size: 13px;}
+.top .lnb li:nth-child(5) a {
+    width: 163px;
+    background: #012754 url(/imgs/Top_img/covidIcon.png) no-repeat 12px 9px;
+    letter-spacing: -1px;
+    padding: 0 10px 0 36px;
+}
+.top .lnb li:nth-child(6) a{
+    background: #195dae url(/imgs/Top_img/header_blank_w.gif) no-repeat 80px center; 
+    width: 106px;
+    padding:0 20px;
+}
+
+/* 바텀(top) 시작 */
+
+.bottom{width: 1200px; margin: auto;    padding: 32px 0 22px 0 ;}
+.bottom .logo{float: left;}
+.bottom .logo a{
+    width: 190px; height: 50px;
+    background: url(/imgs/Top_img/header_logo.png) no-repeat;
+    text-indent: -99999999;
+ }
+.bottom .gnb_area{float: right;}
+.bottom .gnb_area .gnb,
+.bottom .gnb_area .search{float: left}
+
+
+.bottom .gnb li{float: left;}
+.bottom .gnb li a {padding: 0 23px;height: 50px; line-height: 50px; font-size: 19.4px; font-weight: bold;}
+.bottom .gnb li a:hover{color: #1ed760;}
+.bottom .gnb_area .search{position: relative;  float: left; width: 92px; height: 50px;}
+.bottom .gnb_area .search a{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    text-indent: -9999px;
+    background: url(/imgs/Top_img/header_search.png) no-repeat;
+    width: 24px;
+    height: 27px;
+}
+.bottom .gnb li:nth-child(5) a{
+    background: url(/imgs/Top_img/header_blank.gif) no-repeat 110px center;
+}
+.bottom .gnb li:nth-child(7) a{
+    background: url(/imgs/Top_img/header_blank.gif) no-repeat 105px center;
+}
+
+
+
+/* 미드라인 시작 */
+
+.container{
+    position: relative; display: flex;
+    justify-content: center;
+}
+
+
+.visual{ }
+
+.banner{
+    width: 100%;
+    
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+
+
+ .banner button.slick-arrow{font-size: 0;
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    text-indent: -9999;
+     outline:0;}
+
+
+ .banner .slick-prev{background: red; 
+     position: absolute;
+    left: 5%;
+    top: 42%;
+    background: url(/imgs/Mid_banner/visual_lbtn.png) no-repeat;
+     z-index: 10;
+ }
+ .banner .slick-next{background: blue; 
+     position: absolute;
+     top: 42%;
+     right: 5%;
+    background: url(/imgs/Mid_banner/visual_rbtn.png) no-repeat; 
+     z-index: 10;
+ }
+ .slick-slide {
+    text-align: center;
+}
+.slick-slide img{ 
+    display: block;
+}
+
+
+.banner .text{
+    font-family: 'Nanum Square', sans-serif;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    z-index: 999;
+    text-shadow: 3px 3px 10px #000;
+    line-height: 1.4;
+    background:  url('/imgs/Mid_banner/visual_line.png') no-repeat 49.2% 30px
+}
+
+.banner .text span{
+    display: block;
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
